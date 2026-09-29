@@ -1,0 +1,263 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annam Hotel | Delicious South Indian Food</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8ed;
+            color: #333;
+        }
+
+        header {
+            background-color: #8b0000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        nav {
+            background-color: #5c0000;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .hero {
+            height: 400px;
+            background: linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),
+            url("https://images.unsplash.com/photo-1601050690597-df0568f70950")
+            center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 45px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff9800;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #8b0000;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .food {
+            background-color: white;
+            width: 220px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        .food h3 {
+            color: #8b0000;
+            margin-bottom: 10px;
+        }
+
+        .food p {
+            margin: 8px;
+        }
+
+        .price {
+            color: #e65100;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .contact {
+            background-color: #ffe0b2;
+        }
+
+        .contact p {
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #5c0000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🍛 ANNAM HOTEL</h1>
+        <p>Authentic Taste • Quality Food • Happy Customers</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <div>
+            <h2>Welcome to Annam Hotel</h2>
+            <p>Enjoy delicious and traditional food with your family.</p>
+            <a href="#menu" class="btn">View Our Menu</a>
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <h2>About Annam Hotel</h2>
+        <p>
+            Welcome to Annam Hotel! We serve fresh, tasty and
+            traditional Indian food prepared with quality ingredients.
+            Our goal is to provide delicious meals and a comfortable
+            dining experience for every customer.
+        </p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Special Menu</h2>
+
+        <div class="menu">
+
+            <div class="food">
+                <h3>🍚 South Indian Meals</h3>
+                <p>Traditional full meals</p>
+                <p class="price">₹120</p>
+            </div>
+
+            <div class="food">
+                <h3>🥞 Masala Dosa</h3>
+                <p>Crispy dosa with potato masala</p>
+                <p class="price">₹70</p>
+            </div>
+
+            <div class="food">
+                <h3>🍛 Chicken Biryani</h3>
+                <p>Flavorful chicken biryani</p>
+                <p class="price">₹180</p>
+            </div>
+
+            <div class="food">
+                <h3>🍜 Parotta</h3>
+                <p>Soft and layered parotta</p>
+                <p class="price">₹25</p>
+            </div>
+
+            <div class="food">
+                <h3>☕ Tea</h3>
+                <p>Hot and refreshing tea</p>
+                <p class="price">₹15</p>
+            </div>
+
+            <div class="food">
+                <h3>🥤 Fresh Juice</h3>
+                <p>Fresh fruit juice</p>
+                <p class="price">₹60</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <p>📍 Address: cherai main road kalakkad</p>
+        <p>📞 Phone: +91 9952316305</p>
+        <p>📧 Email: annamhotel@example.com</p>
+
+        <h3>Opening Hours</h3>
+        <p>Monday - Sunday: 11:00 AM - 10:00 PM</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Annam Hotel. All Rights Reserved.</p>
+        <p>Made with ❤️ for our customers.</p>
+    </footer>
+
+</body>
+</html>
+```
